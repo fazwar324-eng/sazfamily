@@ -1,11 +1,12 @@
-CARA DEPLOY:
 
-1. Upload semua file ke GitHub repository
-2. Buka Vercel
-3. Add New Project
-4. Pilih repository 'sazfamily'
-5. Klik Deploy
+UPLOAD KE GITHUB / VERCEL
 
-EDIT SOSMED:
-Buka file app/page.js
-Ganti link TikTok, Instagram, YouTube, WhatsApp
+1. Extract ZIP
+2. Upload semua file
+3. Masukkan gambar cinematic ke folder assets:
+   - bg.jpg
+   - profile.jpg
+4. Tambahkan music.mp3 ke folder assets
+5. Publish via GitHub Pages / Vercel
+
+SELESAI
