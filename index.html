@@ -8,7 +8,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("musicBtn");
+
+btn.addEventListener("click", () => {
+    music.play();
+});
+</script>
 <body>
+
 
 <div class="video-bg">
     <video autoplay muted loop playsinline id="bgVideo">
@@ -19,10 +29,11 @@
 <div class="overlay"></div>
 <canvas id="rain"></canvas>
 
-<audio autoplay loop id="bgMusic">
-    <source src="assets/music/music.mp3" type="audio/mpeg">
+<audio id="bgMusic" loop>
+  <source src="assets/music/music.mp3" type="audio/mp3">
 </audio>
 
+<button id="musicBtn">🎵 Music</button>
 <div class="container">
 
     <section class="hero glass">
@@ -55,7 +66,7 @@
             <div class="bg-image" style="background-image:url('assets/images/reference_2.png')"></div>
             <div class="dark"></div>
             <div class="content">
-                <div class="icon">🎵</div>
+                <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
                 <h2>TikTok</h2>
                 <p>@safiraadya606</p>
             </div>
@@ -65,7 +76,7 @@
             <div class="bg-image" style="background-image:url('assets/images/reference_1.png')"></div>
             <div class="dark"></div>
             <div class="content">
-                <div class="icon">📘</div>
+                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
                 <h2>Facebook</h2>
                 <p>SazFamily</p>
             </div>
@@ -75,7 +86,7 @@
             <div class="bg-image" style="background-image:url('assets/images/reference_2.png')"></div>
             <div class="dark"></div>
             <div class="content">
-                <div class="icon">▶️</div>
+                <div class="icon"><<i class="fa-brands fa-youtube"></i>/div>
                 <h2>YouTube</h2>
                 <p>SazConzy</p>
             </div>
@@ -97,10 +108,11 @@
         <h3>Latest Moments</h3>
 
         <div class="gallery-grid">
-            <img src="assets/images/reference_1.png">
-            <img src="assets/images/reference_2.png">
-            <img src="assets/images/reference_1.png">
-            <img src="assets/images/reference_2.png">
+            <img src="assets/images/hero1.png">
+            <img src="assets/images/hero2.png">
+            <img src="assets/images/foto1.jpg">
+            <img src="assets/images/foto2.jpg">
+            <img src="assets/images/foto3.jpg">
         </div>
     </section>
 
