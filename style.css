@@ -346,3 +346,25 @@ body::before {
   z-index: -1;
   border-radius: 30px;
 }
+.light {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.light1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(240,198,116,0.2);
+  top: -50px;
+  left: -50px;
+}
+
+.light2 {
+  width: 350px;
+  height: 350px;
+  background: rgba(255,255,255,0.08);
+  bottom: -100px;
+  right: -100px;
+}
