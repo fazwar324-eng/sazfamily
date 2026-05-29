@@ -368,3 +368,13 @@ body::before {
   bottom: -100px;
   right: -100px;
 }
+.glass {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.glass.show {
+  opacity: 1;
+  transform: translateY(0);
+}
