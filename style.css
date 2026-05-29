@@ -292,3 +292,39 @@ body::before {
   box-shadow: 0 0 20px rgba(240,198,116,0.4);
 }
 }
+.floating-nav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  padding: 18px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f0c674;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  color: #f0c674;
+}
