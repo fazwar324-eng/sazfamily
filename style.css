@@ -275,5 +275,20 @@ body::before {
   to {
     transform: translateY(20px);
   }
-
+.music-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  color: #f0c674;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 0 20px rgba(240,198,116,0.4);
+}
 }
