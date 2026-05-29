@@ -22,3 +22,7 @@ cards.forEach(card => {
 });
 
 console.log("SazFamily Premium Loaded");
+function playMusic() {
+  const music = document.getElementById("bg-music");
+  music.play();
+}
