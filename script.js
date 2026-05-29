@@ -26,3 +26,18 @@ function playMusic() {
   const music = document.getElementById("bg-music");
   music.play();
 }
+const reveal = document.querySelectorAll(".glass");
+
+window.addEventListener("scroll", () => {
+
+  reveal.forEach(item => {
+
+    const top = item.getBoundingClientRect().top;
+
+    if(top < window.innerHeight - 100){
+      item.classList.add("show");
+    }
+
+  });
+
+});
