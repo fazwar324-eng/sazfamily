@@ -1,125 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SazFamily Dark Luxury</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script>
-const music = document.getElementById("bgMusic");
-const btn = document.getElementById("musicBtn");
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SazFamily</title>
 
-btn.addEventListener("click", () => {
-    music.play();
-});
-</script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 <body>
 
+<!-- Background Video -->
+<video autoplay muted loop playsinline id="bg-video">
+  <source src="assets/video/background.mp4" type="video/mp4">
+</video>
 
-<div class="video-bg">
-    <video autoplay muted loop playsinline id="bgVideo">
-        <source src="assets/video/background.mp4" type="video/mp4">
-    </video>
-</div>
-
+<!-- Overlay -->
 <div class="overlay"></div>
-<canvas id="rain"></canvas>
 
-<audio id="bgMusic" loop>
-  <source src="assets/music/music.mp3" type="audio/mp3">
-</audio>
-
-<button id="musicBtn">🎵 Music</button>
 <div class="container">
 
-    <section class="hero glass">
-        <div class="hero-left">
-            <span class="tag">TRAVEL • FAMILY • ADVENTURE</span>
-            <h1>SazFamily</h1>
-            <p class="desc">
-                Daily aesthetic cinematic content with luxury dark vibes,
-                anime atmosphere, travel moments, and premium social experience.
-            </p>
+  <!-- HERO -->
+  <section class="hero glass">
+    <div class="hero-text">
+      <p class="top-title">TRAVEL • FAMILY • ADVENTURE</p>
+      <h1>SazFamily</h1>
 
-            <div class="hero-buttons">
-                <a href="https://tiktok.com/@safiraadya606" target="_blank" class="btn glow">
-                    TikTok
-                </a>
-                <a href="https://instagram.com" target="_blank" class="btn">
-                    Instagram
-                </a>
-            </div>
-        </div>
+      <p class="desc">
+        Daily aesthetic cinematic content with luxury dark vibes,
+        anime atmosphere, travel moments, and premium social experience.
+      </p>
 
-        <div class="hero-right">
-            <img src="assets/images/reference_1.png" alt="Preview">
-        </div>
-    </section>
-
-    <section class="social-grid">
-
-        <a class="social-card" href="https://tiktok.com/@safiraadya606" target="_blank">
-            <div class="bg-image" style="background-image:url('assets/images/reference_2.png')"></div>
-            <div class="dark"></div>
-            <div class="content">
-                <div class="icon"><i class="fa-brands fa-tiktok"></i></div>
-                <h2>TikTok</h2>
-                <p>@safiraadya606</p>
-            </div>
+      <div class="hero-buttons">
+        <a href="https://tiktok.com/@safiraadya606" target="_blank" class="btn gold">
+          TikTok
         </a>
 
-        <a class="social-card" href="https://www.facebook.com/profile.php?id=61590551664620" target="_blank">
-            <div class="bg-image" style="background-image:url('assets/images/reference_1.png')"></div>
-            <div class="dark"></div>
-            <div class="content">
-                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
-                <h2>Facebook</h2>
-                <p>SazFamily</p>
-            </div>
+        <a href="https://instagram.com" target="_blank" class="btn dark">
+          Instagram
         </a>
+      </div>
+    </div>
 
-        <a class="social-card" href="https://youtube.com/@sazconzy?si=0iLfRJoEvpfv9tcC" target="_blank">
-            <div class="bg-image" style="background-image:url('assets/images/reference_2.png')"></div>
-            <div class="dark"></div>
-            <div class="content">
-                <div class="icon"><<i class="fa-brands fa-youtube"></i>/div>
-                <h2>YouTube</h2>
-                <p>SazConzy</p>
-            </div>
-        </a>
+    <div class="hero-image">
+      <img src="assets/images/preview.jpg" alt="Preview">
+    </div>
+  </section>
 
-        <a class="social-card" href="#" target="_blank">
-            <div class="bg-image" style="background-image:url('assets/images/reference_1.png')"></div>
-            <div class="dark"></div>
-            <div class="content">
-                <div class="icon">🧵</div>
-                <h2>Threads</h2>
-                <p>Aesthetic Anime</p>
-            </div>
-        </a>
 
-    </section>
+  <!-- SOCIAL GRID -->
+  <section class="social-grid">
 
-    <section class="gallery glass">
-        <h3>Latest Moments</h3>
+    <a href="https://tiktok.com/@safiraadya606" target="_blank" class="card glass">
+      <i class="fa-brands fa-tiktok"></i>
+      <h2>TikTok</h2>
+      <p>@safiraadya606</p>
+    </a>
 
-        <div class="gallery-grid">
-            <img src="assets/images/hero1.png">
-            <img src="assets/images/hero2.png">
-            <img src="assets/images/foto1.jpg">
-            <img src="assets/images/foto2.jpg">
-            <img src="assets/images/foto3.jpg">
-        </div>
-    </section>
+    <a href="https://www.facebook.com/profile.php?id=61590551664620" target="_blank" class="card glass">
+      <i class="fa-brands fa-facebook"></i>
+      <h2>Facebook</h2>
+      <p>SazFamily</p>
+    </a>
 
-    <footer class="glass footer">
-        <h2>Business & Collaboration</h2>
-        <p>Luxury dark cinematic social page concept.</p>
-    </footer>
+    <a href="https://youtube.com/@sazconzy" target="_blank" class="card glass">
+      <i class="fa-brands fa-youtube"></i>
+      <h2>YouTube</h2>
+      <p>SazConzy</p>
+    </a>
+
+    <a href="https://threads.net" target="_blank" class="card glass">
+      <i class="fa-brands fa-threads"></i>
+      <h2>Threads</h2>
+      <p>Aesthetic Anime</p>
+    </a>
+
+  </section>
+
+
+  <!-- LATEST MOMENTS -->
+  <section class="moments glass">
+    <h2>Latest Moments</h2>
+
+    <div class="moment-grid">
+      <img src="assets/images/moment1.jpg" alt="moment1">
+      <img src="assets/images/moment2.jpg" alt="moment2">
+      <img src="assets/images/moment3.jpg" alt="moment3">
+      <img src="assets/images/moment4.jpg" alt="moment4">
+    </div>
+  </section>
+
+
+  <!-- BUSINESS -->
+  <section class="business glass">
+    <h2>Business & Collaboration</h2>
+    <p>Luxury dark cinematic social page concept.</p>
+  </section>
 
 </div>
 
