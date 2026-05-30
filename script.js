@@ -42,13 +42,16 @@ window.addEventListener("scroll", () => {
 
 });
 const music = document.getElementById("bg-music");
+const btn = document.querySelector(".music-btn");
 
 function toggleMusic(){
 
   if(music.paused){
     music.play();
-  } else {
+    btn.classList.add("playing");
+  }else{
     music.pause();
+    btn.classList.remove("playing");
   }
 
 }
