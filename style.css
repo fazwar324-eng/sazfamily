@@ -11,22 +11,41 @@ body {
   overflow-x: hidden;
 }
 
-#bg-video {
+#bg-video{
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
+
   z-index: -2;
+
+  filter:
+    Brightness : 85%
+Contrast   : 110%
+Saturation : 115%
+Overlay    : 20–35%
+Blur       : 0px
+Glass Card : 22%
+  transform: scale(1.05);
+}
 }
 
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
-  backdrop-filter: blur(4px);
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.20),
+      rgba(0,0,0,0.35)
+    );
+
   z-index: -1;
+}
 }
 
 .container {
@@ -36,12 +55,12 @@ body {
   padding: 20px;
 }
 
-.glass {
-  background: rgba(20,20,20,0.45);
-  border: 1px solid rgba(255,255,255,0.08);
+.glass{
+  background: rgba(20,20,20,0.22);
+
   backdrop-filter: blur(18px);
-  border-radius: 28px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.35);
+
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .hero {
@@ -107,7 +126,14 @@ body {
   border-radius: 22px;
   object-fit: cover;
 }
-
+.hero{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.04),
+      rgba(255,255,255,0.01)
+    );
+}
 .social-grid {
   margin-top: 25px;
   display: grid;
@@ -277,19 +303,50 @@ body::before {
   }
 .music-btn {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 60px;
-  height: 60px;
+
+  bottom: 20px;
+  right: 20px;
+
+  width: 52px;
+  height: 52px;
+
   border: none;
   border-radius: 50%;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(10px);
+
+  background: rgba(15,15,15,0.65);
+  backdrop-filter: blur(15px);
+
   color: #f0c674;
-  font-size: 22px;
+  font-size: 18px;
+
   cursor: pointer;
-  z-index: 999;
-  box-shadow: 0 0 20px rgba(240,198,116,0.4);
+  z-index: 9999;
+
+  box-shadow:
+    0 0 15px rgba(240,198,116,0.25);
+
+  transition: all .3s ease;
+}
+
+.music-btn:hover{
+  transform: scale(1.08);
+}
+
+.music-btn.playing{
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 10px rgba(240,198,116,0.3);
+  }
+  50%{
+    box-shadow: 0 0 25px rgba(240,198,116,0.6);
+  }
+  100%{
+    box-shadow: 0 0 10px rgba(240,198,116,0.3);
+  }
+}
 }
 }
 .floating-nav {
@@ -386,8 +443,8 @@ body::before {
 }
 .music-btn {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 90px;
+  right: 20px;
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -404,4 +461,20 @@ body::before {
 
 .music-btn:hover {
   transform: scale(1.08);
+}
+body::after{
+  content:"";
+
+  position:fixed;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle,
+      transparent 40%,
+      rgba(0,0,0,0.35) 100%
+    );
+
+  pointer-events:none;
+  z-index:-1;
 }
